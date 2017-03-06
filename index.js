@@ -24,6 +24,7 @@ const options = {
 		path.join(__dirname, '/lib/includes/es5-shim.jsx'),
 		path.join(__dirname, '/lib/includes/get.jsx')
 	],
+  noui: false,
   execOptions: {}
 };
 
