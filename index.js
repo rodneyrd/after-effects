@@ -25,7 +25,8 @@ const options = {
 		path.join(__dirname, '/lib/includes/get.jsx')
 	],
   noui: false,
-  execOptions: {}
+  execOptions: {},
+  executablePath: null
 };
 
 const platform = (() => {
