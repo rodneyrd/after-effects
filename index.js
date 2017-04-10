@@ -151,7 +151,7 @@ function execute(/*args*/) {
       resolve();
 
     if (is(results, Error))
-      reject(Errors.NoResult);
+      reject(results.message);
 
     if (is(results.returned, Error))
       reject(new AfterEffectsError(results.returned.message));
@@ -174,7 +174,7 @@ function executeSync(/*args*/) {
     return;
 
   if (is(results, Error))
-    throw new Error(Errors.NoResult);
+    throw new Error(results.message);
 
   if (is(results.returned, Error))
     throw new AfterEffectsError(results.returned.message);
